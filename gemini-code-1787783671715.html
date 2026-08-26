@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oasis Urbano | Carpintería Sustentable & CoWork</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="navbar">
+        <div class="logo">Oasis Urbano</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#cowork">CoWork</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section / Portada -->
+    <section id="inicio" class="hero">
+        <h1>Carpintería Sustentable & Taller CoWork</h1>
+        <p>Muebles y huerteros con pallets reciclados. Alquiler de espacio de trabajo y herramientas.</p>
+        <div class="hero-buttons">
+            <a href="#catalogo" class="btn btn-primary">Ver Catálogo</a>
+            <a href="#cowork" class="btn btn-secondary">Reservar CoWork</a>
+        </div>
+    </section>
+
+    <!-- Catálogo de Productos -->
+    <section id="catalogo" class="section">
+        <h2>Catálogo de Productos</h2>
+        <div class="grid-container">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Huertero 2 Niveles">
+                <h3>Huertero 2 Niveles</h3>
+                <p>Madera de pallet recubierta con protector de intemperie y malla geotextil.</p>
+                <span class="price">$15.000</span>
+                <button onclick="comprarProducto('Huertero 2 Niveles')" class="btn-card">Encargar por WhatsApp</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Macetero Vertical">
+                <h3>Macetero Vertical</h3>
+                <p>Ideal para balcones y espacios reducidos. Madera reciclada cepillada.</p>
+                <span class="price">$12.000</span>
+                <button onclick="comprarProducto('Macetero Vertical')" class="btn-card">Encargar por WhatsApp</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Mesa de Jardín">
+                <h3>Mesa de Jardín</h3>
+                <p>Mueble reforzado para exterior tratado con barniz marítimo.</p>
+                <span class="price">$28.000</span>
+                <button onclick="comprarProducto('Mesa de Jardín')" class="btn-card">Encargar por WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Espacio CoWork -->
+    <section id="cowork" class="section bg-light">
+        <h2>Espacio CoWork / Taller Compartido</h2>
+        <p class="subtitle">Alquila un banco de trabajo equipado y utiliza nuestras herramientas para tus proyectos de carpintería.</p>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Pase por Hora / Día</h3>
+                <p>Acceso a banco de trabajo, herramientas manuales y zona de armado.</p>
+                <span class="price">$2.500 / Hora</span>
+                <button onclick="reservarCoWork('Pase por Hora')" class="btn-card">Reservar Turno</button>
+            </div>
+            <div class="card">
+                <h3>Membresía Mensual</h3>
+                <p>Uso ilimitado en horarios acordados, guardado de materiales y asesoría.</p>
+                <span class="price">$25.000 / Mes</span>
+                <button onclick="reservarCoWork('Membresía Mensual')" class="btn-card">Consultar Cupo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página / Contacto -->
+    <footer id="contacto" class="footer">
+        <p>&copy; 2026 Oasis Urbano - Carpintería Sustentable & CoWork</p>
+        <p>Abona mediante Transferencia Bancaria Directa (Alias/CBU) o Efectivo en Taller.</p>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/541130541746?text=¡Hola!%20Tengo%20una%20consulta%20sobre%20Oasis%20Urbano." class="whatsapp-btn" target="_blank">
+        💬 WhatsApp
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
